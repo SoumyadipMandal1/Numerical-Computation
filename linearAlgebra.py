@@ -1,7 +1,12 @@
-def rowEchelon(matrix):
+import copy
+
+def rowEchelon(inputMatrix):
 	'''
-	This function converts a matrix into its row Echelon form in the most optimal way.
+	This function returns the row Echelon form of the matrix in the most optimal way.
 	'''
+
+	# Copying the matrix so that the original matrix does not change
+	matrix = copy.copy(inputMatrix)
 
 	########## CHECKING THE DIMENSIONS OF MATRIX #############
 
@@ -56,10 +61,15 @@ def rowEchelon(matrix):
 			row += 1
 			column += 1
 
-def reducedRowEchelon(matrix):
+	return matrix
+
+def reducedRowEchelon(inputMatrix):
 	'''
-	This function converts a matrix into its reduced row echelon form.
+	This function returns the reduced row echelon form of the matrix.
 	'''
+
+	# Copying the matrix so that the original matrix does not change
+	matrix = copy.copy(inputMatrix)
 
 	########## CHECKING THE DIMENSIONS OF MATRIX #############
 		
@@ -119,3 +129,5 @@ def reducedRowEchelon(matrix):
 
 			row += 1
 			column += 1
+
+	return matrix
