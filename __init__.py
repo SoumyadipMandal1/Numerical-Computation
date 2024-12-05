@@ -2,6 +2,6 @@
 This module contains functions of Numerical Computation
 """
 
-__all__ = ["integration"]
+__all__ = ["integration", "linearAlgebra"]
 
-from . import integration
+from . import integration, linearAlgebra
